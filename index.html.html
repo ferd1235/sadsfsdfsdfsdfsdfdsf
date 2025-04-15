@@ -14,70 +14,54 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ahmet Yılmaz</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f4f4;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 3em;
-      margin-bottom: 0.2em;
-    }
-
-    p {
-      font-size: 1.2em;
-      margin-top: 0;
-      color: #555;
-    }
-
-    a.button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background-color: #007acc;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-    }
-
-    a.button:hover {
-      background-color: #005a99;
-    }
-
-    .counter {
-      margin-top: 40px;
-      font-size: 1em;
-      color: #333;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Başvuru Onayı</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        p {
+            font-size: 18px;
+            color: #34495e;
+        }
+        .button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #2980b9;
+        }
+    </style>
 </head>
 <body>
-  <h1>Ahmet Yılmaz</h1>
-  <p>Yazılım Geliştirici</p>
-  <a class="button" href="mailto:ahmet@example.com">İletişim</a>
-
-  <div class="counter">
-    Sayfa ziyaret sayısı: <span id="visitCount">0</span>
-  </div>
-
-  <script>
-    // localStorage kullanarak tarayıcıda sayaç saklama
-    let count = localStorage.getItem('visitCount') || 0;
-    count++;
-    localStorage.setItem('visitCount', count);
-    document.getElementById('visitCount').textContent = count;
-  </script>
+    <div class="container">
+        <h1>Başvurunuz Onaylanmıştır</h1>
+        <p>Mesai saatleri içinde sizinle iletişime geçilecektir.</p>
+        <a href="#" class="button">Tamamlanmiştir</a>
+    </div>
 </body>
 </html>
